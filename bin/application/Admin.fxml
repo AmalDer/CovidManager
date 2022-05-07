@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="530.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/5e86efbdfbdfad48dd32a16c5aa38c25.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="408.0" style="-fx-background-color: FAFAD2;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonUtilisateurs" layoutX="139.0" layoutY="103.0" mnemonicParsing="false" onAction="#utilisateurs" prefHeight="39.0" prefWidth="128.0" text="Utilisateurs">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonTraitements" layoutX="139.0" layoutY="264.0" mnemonicParsing="false" onAction="#traitements" prefHeight="38.0" prefWidth="127.0" text="Traitements">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonHopitaux" layoutX="139.0" layoutY="179.0" mnemonicParsing="false" onAction="#hopitaux" prefHeight="38.0" prefWidth="128.0" text="Hopitaux">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="48.0" layoutY="26.0" text="Voulez vous la gestion des utilisateurs,">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="52.0" text="des hopitaux ou des traitements?">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

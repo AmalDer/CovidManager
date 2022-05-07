@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TraitementsController">
+   <children>
+      <TableView fx:id="table" layoutX="219.0" layoutY="8.0" prefHeight="583.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="idColonne" prefWidth="240.0" text="Identifiant" />
+          <TableColumn fx:id="descColonne" prefWidth="237.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonAfficher" layoutX="26.0" layoutY="493.0" mnemonicParsing="false" onAction="#afficher" text="Afficher" />
+      <Button fx:id="buttonAjouter" layoutX="130.0" layoutY="493.0" mnemonicParsing="false" onAction="#ajouter" text="Ajouter" />
+      <Button fx:id="buttonModifier" layoutX="26.0" layoutY="541.0" mnemonicParsing="false" onAction="#modifier" text="Modifier" />
+      <Button fx:id="buttonSupprimer" layoutX="130.0" layoutY="541.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <TextField fx:id="txtId" layoutX="40.0" layoutY="88.0" />
+      <TextArea fx:id="txtDesc" layoutX="39.0" layoutY="183.0" prefHeight="200.0" prefWidth="157.0" />
+      <Label layoutX="26.0" layoutY="58.0" text="identifiant du médicament" />
+      <Label layoutX="26.0" layoutY="152.0" text="Description du médicament" />
+   </children>
+</AnchorPane>

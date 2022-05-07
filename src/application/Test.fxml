@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TestController">
+   <children>
+      <Button fx:id="buttonAfficher" layoutX="137.0" layoutY="306.0" mnemonicParsing="false" onAction="#afficher" text="Afficher" />
+      <TableView fx:id="table" layoutX="218.0" layoutY="15.0" prefHeight="371.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="identifiant" prefWidth="112.0" text="Identifiant" />
+          <TableColumn fx:id="fonction" prefWidth="107.0" text="Fonction" />
+            <TableColumn fx:id="login" prefWidth="101.0" text="Login" />
+            <TableColumn fx:id="mdp" prefWidth="96.0" text="Mot de passe" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonAjouter" layoutX="30.0" layoutY="306.0" mnemonicParsing="false" onAction="#ajouter" text="ajouter" />
+      <Button fx:id="buttonModifier" layoutX="31.0" layoutY="345.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+      <Button fx:id="buttonSupprimer" layoutX="130.0" layoutY="345.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <TextField fx:id="txtId" layoutX="39.0" layoutY="62.0" />
+      <TextField fx:id="txtTitre" layoutX="39.0" layoutY="116.0" />
+      <TextField fx:id="txtLogin" layoutX="39.0" layoutY="188.0" />
+      <TextField fx:id="txtMdp" layoutX="39.0" layoutY="251.0" />
+      <Text layoutX="17.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identifiant" />
+      <Text layoutX="20.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre" />
+      <Text layoutX="17.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" />
+      <Text layoutX="17.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" />
+   </children>
+</AnchorPane>
